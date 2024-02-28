@@ -1,5 +1,8 @@
 import React from 'react';
 import Feed from '@components/Feed';
+import dotenv from 'dotenv';
+
+dotenv.config()
 
 const Home = () => {
   return (
