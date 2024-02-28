@@ -8,7 +8,7 @@ export const connectToDB=async()=> {
     if(isConnected) return console.log('mongodb is already connected');
 
     try {
-        await mongoose.connect(process.env.MONGODB_URL.toString(),{
+        await mongoose.connect(process.env.MONGODB_URL,{
             dbName:'share_prompt',
             useNewUrlParser:true,
             useUnifiedTopology:true,
